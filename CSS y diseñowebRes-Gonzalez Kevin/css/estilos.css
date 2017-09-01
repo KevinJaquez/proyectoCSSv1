@@ -1,0 +1,157 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Bold.ttf);
+}
+@-webkit-keyframes slidein{
+	0%{
+		margin-top: 130%;
+	}
+
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+body{
+  background-color: #02010a;
+	font-family: DancingScript;
+	animation: slidein 1.3s;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 0.5px;
+  padding-left: 13px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#titulo{
+  font-size: 30px;
+  color: white;
+  filter: drop-shadow(2px 2px 2px #02010a);
+  font-family: DancingScript;
+  text-align: left;
+}
+li a{
+    color: white ;
+}
+nav{
+	margin-top: 11px;
+	padding-left: 31%;
+}
+#menu{
+  display: inline-flex;
+  padding-left: 45%;
+  font-size: 25px;
+  font-family: DancingScript;
+}
+#menu li{
+  padding-right: 10px;
+  list-style: none;
+}
+.activo a, a:hover{
+  text-decoration: none;
+}
+#imagencentral{
+	background-color: #82c3a6;
+	padding: 1% 2% 1% 2%;
+	text-align: center;
+}
+img[src="img/paisajemain.jpg"]
+{
+	width: 90%;
+}
+img[src="img/paisaje2.jpg"]:hover
+{
+	filter: drop-shadow(2px 2px 2px black);
+	transform: rotate(10deg);
+transition: transform 1s, filter 0.5s;
+}
+img[src="img/paisaje2.jpg"]{
+transition: transform 1s, filter 0.5s;
+}
+img[src="img/retra.jpg"]
+{
+	transition: translate 1s, drop-shadow 1s;
+}
+img[src="img/retra.jpg"]:hover
+{
+transform: translate(20px,-5px);
+filter: drop-shadow(2px 2px 2px #82c3a6);
+transition: transform 0.8s;
+}
+#imgsecundaria{
+	text-align: center;
+	background-color: #d5c75f;
+	border: 1px;
+	padding: 2%;
+}
+#imgsecundaria figure img{
+	width: 45%;
+	height: 280px;
+	display:inline-flex;
+	padding: 2%;
+}
+footer{
+	background: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	margin-top: 0%;
+	padding: .1% .8% .1% .8%;
+	text-align: justify;
+}
+#mail{
+  list-style: none;
+  list-style-image: url("../img/outlook.svg");
+}
+#whats{
+  list-style-image: url("../img/whatsapp.svg");
+}
+#face{
+  list-style-image: url("../img/facebookBlack.svg");
+}
+#insta{
+  list-style-image: url("../img/instagram.svg");
+}
+#gma{
+list-style-image: url("../img/gmail.svg");
+}
+#dire{
+list-style-image: url("../img/Direccion.svg");
+}
+
+#footer{
+	text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contacto li, #redes li{
+  padding-right: 0px;
+	margin-bottom: 0;
+  flex-wrap: wrap;
+	transform: scale(-30px);
+}
+#mail a{
+	color: black;
+}
+ul p{
+	font-size: 40px;
+	padding: 0%;
+	margin: 0%;
+}
+#pter{
+	text-align: center;
+	font-size: 40px;
+}
+#Termin{
+	transform: translateY(-5px);
+	margin-right: 90px;
+	margin-left: 0px;
+}
+#DER{
+	transform: translateY(-5px);
+	margin-left: 90px;
+}
