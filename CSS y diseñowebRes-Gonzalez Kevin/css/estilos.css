@@ -6,7 +6,6 @@
 	0%{
 		margin-top: 130%;
 	}
-
 	60%{
 		margin-top: -5%;
 	}
@@ -14,44 +13,16 @@
 		margin-top: 0%;
 	}
 }
+
 body{
   background-color: #02010a;
 	font-family: DancingScript;
 	animation: slidein 1.3s;
 }
-header{
-  background-color: #5b7989;
-  border-radius: 10px 10px 0px 0px;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  padding: 0.5px;
-  padding-left: 13px;
-  display: flex;
-  flex-wrap: wrap;
-}
-#titulo{
-  font-size: 30px;
-  color: white;
-  filter: drop-shadow(2px 2px 2px #02010a);
-  font-family: DancingScript;
-  text-align: left;
-}
-li a{
-    color: white ;
-}
-nav{
-	margin-top: 11px;
-	padding-left: 31%;
-}
-#menu{
-  display: inline-flex;
-  padding-left: 45%;
-  font-size: 25px;
-  font-family: DancingScript;
-}
+li a{color: white ;}
 #menu li{
-  padding-right: 10px;
-  list-style: none;
+	padding-right: 10px;
+	list-style: none;
 }
 .activo a, a:hover{
   text-decoration: none;
@@ -69,7 +40,7 @@ img[src="img/paisaje2.jpg"]:hover
 {
 	filter: drop-shadow(2px 2px 2px black);
 	transform: rotate(10deg);
-transition: transform 1s, filter 0.5s;
+	transition: transform 1s, filter 0.5s;
 }
 img[src="img/paisaje2.jpg"]{
 transition: transform 1s, filter 0.5s;
@@ -96,6 +67,22 @@ transition: transform 0.8s;
 	display:inline-flex;
 	padding: 2%;
 }
+.img2, .img4, .img6{
+	filter: grayscale(100%);
+}
+.img1{
+	filter: blur(10px);
+}
+.img3{
+	filter: sepia(90%);
+}
+img[class*=img]{
+ width: 29%;
+ height: 240px;
+ display:inline-flex;
+ padding: 2%;
+ margin: 0%;
+}
 footer{
 	background: #C6d5c5;
 	border-radius: 0px 0px 10px 10px;
@@ -104,35 +91,23 @@ footer{
 	text-align: justify;
 }
 #mail{
-  list-style: none;
-  list-style-image: url("../img/outlook.svg");
+	list-style: none;
+	list-style-image: url("../img/outlook.svg");
 }
 #whats{
-  list-style-image: url("../img/whatsapp.svg");
+	list-style-image: url("../img/whatsapp.svg");
 }
 #face{
-  list-style-image: url("../img/facebookBlack.svg");
+	list-style-image: url("../img/facebookBlack.svg");
 }
 #insta{
-  list-style-image: url("../img/instagram.svg");
+	list-style-image: url("../img/instagram.svg");
 }
 #gma{
 list-style-image: url("../img/gmail.svg");
 }
 #dire{
 list-style-image: url("../img/Direccion.svg");
-}
-
-#footer{
-	text-align: justify;
-  display: flex;
-  flex-wrap: wrap;
-}
-#contacto li, #redes li{
-  padding-right: 0px;
-	margin-bottom: 0;
-  flex-wrap: wrap;
-	transform: scale(-30px);
 }
 #mail a{
 	color: black;
@@ -142,16 +117,217 @@ ul p{
 	padding: 0%;
 	margin: 0%;
 }
-#pter{
+#footer{
+	text-align: justify;
+	display: flex;
+	flex-wrap: wrap;
+}
+/*//////////////1000px////////////////////////////////*/
+@media (min-width: 1000px){
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+	margin: 0%;
+	display:flex;
+  flex-flow: row;
+
+}
+#titulo{
+	font-size: 2.7vw;
+  color: white;
+  filter: drop-shadow(2px 2px 2px #02010a);
+	margin-right: 13vw;
+	margin-left: 2%;
+
+}
+nav{
+	margin-top: 1%;
+	margin: 0% 0% 0% 30%;
+	padding-top: 2.2vh;
+	padding-bottom: 0vh
+}
+#menu{
+  display: inline-flex;
+  padding-left: 0%;
+  font-size: 2vw;
+  font-family: DancingScript;
+}
+#galeria{
+	background-color: #d5c75f;
+	border: 1px;
+	padding: 1%;
+	display: flex;
+	flex-wrap: wrap;
+}
+ img[class*=img]{
+	width: 29%;
+	height: 240px;
+	display:inline-flex;
+	padding: 2%;
+	margin: 0%;
+}
+
+#contacto li, #redes li{
+  padding-right: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+  flex-wrap: wrap;
+	transform: scale(-30px);
+}
+#redes{
+	margin-right: 3vw;
+}
+.pter{
 	text-align: center;
 	font-size: 40px;
 }
 #Termin{
 	transform: translateY(-5px);
-	margin-right: 90px;
 	margin-left: 0px;
+	margin-right: 4vw;
 }
 #DER{
-	transform: translateY(-5px);
-	margin-left: 90px;
+	transform: translateY(2px);
+}
+#DER, #Termin, #contacto, #redes{
+	font-size: 1.4vw;
+}
+}
+/*//////////////999px-701px////////////////////////////////*/
+@media (max-width: 999px)and (min-width: 701px){
+	header{
+	  background-color: blue;
+	  border-radius: 10px 10px 0px 0px;
+		margin: 0%;
+		display:flex;
+	  flex-flow: row;
+	}
+	#titulo{
+		font-size: 28px;
+	  color: white;
+	  filter: drop-shadow(2px 2px 2px #02010a);
+		margin-right: 5%;
+		margin-left: 2%;
+	}
+	nav{
+		margin-top: 1%;
+		margin: 0% 0% 0% 30%;
+		padding-top: 2.2vh;
+		padding-bottom: 0vh
+	}
+	#menu{
+	  display: inline-flex;
+	  padding-left: 0%;
+	  font-size: 25px;
+	  font-family: DancingScript;
+	}
+
+	#contacto li, #redes li{
+	  padding-right: 0;
+		margin-bottom: 0;
+		margin-right: 0;
+	  flex-wrap: wrap;
+		transform: scale(-30px);
+	}
+	#redes{
+		margin-right: 3vw;
+	}
+	.pter{
+		text-align: center;
+		font-size: 25px;
+	}
+	#Termin{
+		transform: translateY(6px);
+		margin-left: 0px;
+		margin-right: 4vw;
+	}
+	#DER{
+		transform: translateY(6px);
+	}
+	#DER, #Termin, #contacto, #redes{
+		font-size: 1.4vw;
+	}
+}
+
+
+@media (max-width: 700px){
+	header{
+		margin-top: 0%;
+		width: 100%;
+	  background-color: #5b7989;
+	  border-radius: 10px 10px 0px 0px;
+		margin: 0%;
+		padding: 0%;
+		display:flex;
+	  flex-flow:column;
+	}
+	#titulo{
+		text-align: center;
+		margin-bottom: 0%;
+		margin-top: 1%;
+		font-size: 10.7vw;
+	  color: white;
+	  filter: drop-shadow(2px 2px 2px #02010a);
+	}
+	nav{
+		margin: 0%;
+		text-align: center;
+	}
+	#menu{
+	  display: inline-flex;
+	  padding-left: 0%;
+	  font-size: 5vw;
+	}
+	#imagencentral{
+		padding: 1%;
+	}
+	img[src="img/paisajemain.jpg"]
+	{		width: 100%;	}
+
+	#imgsecundaria{
+		padding: 1%;
+	}
+	#imgsecundaria figure img{
+		border: 1px black;
+		display: block;
+		width: 100%;
+		height: 150%;
+		padding: 1%;
+	}
+	img[class*=img]{
+ 	width: 100%;
+ 	height: 280px;
+ 	display: flex;
+	flex-direction: column;
+ 	padding: 2%;
+ 	margin: 0%;
+ }
+	#footer{
+		text-align: justify;
+	  display: flex;
+		flex-direction: column-reverse;
+		}
+	#contacto li, #redes li{
+		font-size: 3vw;
+	}
+	#contacto{
+		align-self: center;
+	}
+	#redes{
+		margin-left: 10%;
+	}
+	.pter{
+		margin-left: 7%;
+		font-size: 40px!important;
+	}
+	#Termin p{
+		margin-left: 15%;
+		font-size: 3vw;
+	}
+	#DER{
+margin-left: 18%;
+	}
+	#DER, #Termin, #contacto, #redes{
+		font-size: 3vw;
+	}
 }
