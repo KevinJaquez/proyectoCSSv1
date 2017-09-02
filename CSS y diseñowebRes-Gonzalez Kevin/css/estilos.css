@@ -29,8 +29,19 @@ li a{color: white ;}
 }
 #imagencentral{
 	background-color: #82c3a6;
-	padding: 1% 2% 1% 2%;
+	padding: 1%;
 	text-align: center;
+}
+figcaption{
+	margin: 0%;
+	font-size: 27px;
+	width: 10%;
+	text-decoration: underline;
+	margin-left: 45%;
+	text-align: center;
+}
+article{
+	display: inline-flex;
 }
 img[src="img/paisajemain.jpg"]
 {
@@ -61,11 +72,16 @@ transition: transform 0.8s;
 	border: 1px;
 	padding: 2%;
 }
-#imgsecundaria figure img{
-	width: 45%;
+.fg{
+	display: flex;
+	flex-direction: column;
+}
+#imgsecundaria  figure img{
+	width: 100%;
 	height: 280px;
 	display:inline-flex;
 	padding: 2%;
+	border: 0%;
 }
 .img2, .img4, .img6{
 	filter: grayscale(100%);
@@ -136,10 +152,15 @@ header{
 	font-size: 2.7vw;
   color: white;
   filter: drop-shadow(2px 2px 2px #02010a);
-	margin-right: 13vw;
+	margin-right: 5%;
 	margin-left: 2%;
-
 }
+.titulo2{
+	font-size: 40px;
+	color: white;
+	filter: drop-shadow(2px 2px 2px #02010a);
+	margin-right: 24%;
+	margin-left: 3%;}
 nav{
 	margin-top: 1%;
 	margin: 0% 0% 0% 30%;
@@ -149,7 +170,7 @@ nav{
 #menu{
   display: inline-flex;
   padding-left: 0%;
-  font-size: 2vw;
+  font-size: 28px;
   font-family: DancingScript;
 }
 #galeria{
@@ -194,9 +215,9 @@ nav{
 }
 }
 /*//////////////999px-701px////////////////////////////////*/
-@media (max-width: 999px)and (min-width: 701px){
+@media (max-width: 999px)and (min-width: 851px){
 	header{
-	  background-color: blue;
+	  background-color: #5b7989;
 	  border-radius: 10px 10px 0px 0px;
 		margin: 0%;
 		display:flex;
@@ -209,6 +230,13 @@ nav{
 		margin-right: 5%;
 		margin-left: 2%;
 	}
+	.titulo2{
+		font-size: 40px;
+	  color: white;
+	  filter: drop-shadow(2px 2px 2px #02010a);
+		margin-right: 22%;
+		margin-left: 3%;}
+
 	nav{
 		margin-top: 1%;
 		margin: 0% 0% 0% 30%;
@@ -218,9 +246,20 @@ nav{
 	#menu{
 	  display: inline-flex;
 	  padding-left: 0%;
-	  font-size: 25px;
+	  font-size: 28px;
 	  font-family: DancingScript;
 	}
+	.galeria{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0%;
+	}
+	img[class*=img]{
+ 	width: 45%;
+ 	height: 280px;
+ 	padding: 1%;
+ 	margin: 0%;
+ }
 
 	#contacto li, #redes li{
 	  padding-right: 0;
@@ -250,7 +289,7 @@ nav{
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 850px){
 	header{
 		margin-top: 0%;
 		width: 100%;
@@ -267,6 +306,14 @@ nav{
 		margin-top: 1%;
 		font-size: 10.7vw;
 	  color: white;
+	  filter: drop-shadow(2px 2px 2px #02010a);
+	}
+	.titulo2{
+		text-align: center;
+		font-size: 10.7vw;
+		margin-bottom: 0%;
+		margin-top: 1%;
+		color: white;
 	  filter: drop-shadow(2px 2px 2px #02010a);
 	}
 	nav{
@@ -287,9 +334,13 @@ nav{
 	#imgsecundaria{
 		padding: 1%;
 	}
+	article{
+		display: block;
+	}
 	#imgsecundaria figure img{
 		border: 1px black;
 		display: block;
+		flex-direction: column;
 		width: 100%;
 		height: 150%;
 		padding: 1%;
